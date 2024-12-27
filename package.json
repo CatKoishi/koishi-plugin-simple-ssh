@@ -1,13 +1,34 @@
 {
   "name": "koishi-plugin-simple-ssh",
   "description": "use ssh to run simple command on linux",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
     "lib",
     "dist"
   ],
+  "koishi": {
+    "description": {
+      "en": "Simple SSH",
+      "zh": "可以使用SSH执行一些很基础的指令"
+    },
+    "service": {
+      "required": [
+        "logger"
+      ]
+    }
+  },
+  "author": {
+    "name": "NyaKoishi",
+    "email": "nyakoishi@qq.com",
+    "url": "https://github.com/CatKoishi"
+  },
+  "homepage": "https://github.com/CatKoishi/koishi-plugin-simple-ssh",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CatKoishi/koishi-plugin-simple-ssh"
+  },
   "license": "MIT",
   "scripts": {},
   "keywords": [
@@ -17,6 +38,7 @@
   ],
   "devDependencies": {},
   "peerDependencies": {
-    "koishi": "4.18.3"
+    "koishi": "^4.18.0",
+    "node-ssh": "^13.2.0"
   }
 }
